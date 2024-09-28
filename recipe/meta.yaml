@@ -1,5 +1,5 @@
 {% set name = "ptflops" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 59c0af2505255108df019674fb805eb61178f0baad6515720bb30dcb29592071
+  sha256: 660a5f2218294ea035938054d9b3cfa2bff4812dcd7e9469344af5c0945c45e1
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ test:
   commands:
     - pip check
 
-about: 
+about:
   home: https://github.com/sovrasov/flops-counter.pytorch
   summary: This tool is designed to compute the theoretical amount of multiply-add operations in neural networks.
   license: MIT
